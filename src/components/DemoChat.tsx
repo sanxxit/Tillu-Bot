@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Send, Camera, Mic } from 'lucide-react';
+import { Send, Camera, Mic, Bot } from 'lucide-react';
 
 // Define the message structure
 type Message = {
@@ -16,7 +16,7 @@ type Message = {
 const sampleConversation: Message[] = [
   {
     id: 1,
-    text: "Hi! I'm your personal finance assistant. I'll help you track expenses, create budgets, and provide financial insights. Try sending a message like 'Spent ₹200 on groceries'!",
+    text: "Hi! I'm TilluBot, your cute expense buddy! 🤖💰 I'll help you track expenses, create budgets, and provide financial insights. Try sending a message like 'Spent ₹200 on groceries'!",
     sender: 'bot',
     timestamp: new Date(Date.now() - 60000 * 10)
   }
@@ -103,19 +103,19 @@ const DemoChat = () => {
   return (
     <section id="demo" className="py-16 md:py-24">
       <div className="container px-4 mx-auto">
-        <h2 className="section-heading">See It In Action</h2>
+        <h2 className="section-heading">See TilluBot In Action</h2>
         <p className="section-subheading">
-          Try the interactive demo to see how easily you can track expenses through chat.
+          Try the interactive demo to see how easily you can track expenses with your cute expense buddy.
         </p>
         
         <div className="max-w-md mx-auto border rounded-xl shadow-lg overflow-hidden bg-gray-100">
           {/* Chat header */}
           <div className="bg-whatsapp p-3 text-white flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-              <Send className="h-5 w-5" />
+              <Bot className="h-5 w-5" />
             </div>
             <div>
-              <h3 className="font-semibold">ExpenseBot</h3>
+              <h3 className="font-semibold">TilluBot 💸</h3>
               <p className="text-xs opacity-80">Online</p>
             </div>
           </div>
@@ -161,7 +161,7 @@ const DemoChat = () => {
             <Input
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
-              placeholder="Type a message..."
+              placeholder="Type a message to TilluBot..."
               className="flex-1 bg-gray-100 border-0 focus-visible:ring-whatsapp"
             />
             <Button 
@@ -176,7 +176,7 @@ const DemoChat = () => {
         </div>
         
         <div className="mt-8 text-center">
-          <p className="text-gray-600 mb-2">Try these example messages:</p>
+          <p className="text-gray-600 mb-2">Try these example messages with TilluBot:</p>
           <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
             <Button 
               variant="outline" 

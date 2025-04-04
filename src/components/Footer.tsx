@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Send } from 'lucide-react';
+import { Send, Bot } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,14 +9,15 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="md:w-1/3">
             <div className="flex items-center gap-2 mb-4">
-              <Send className="h-6 w-6 text-whatsapp" />
-              <h2 className="text-xl font-bold">ExpenseBot</h2>
+              <Bot className="h-6 w-6 text-whatsapp" />
+              <h2 className="text-xl font-bold">TilluBot</h2>
+              <span className="text-xs bg-whatsapp/20 text-whatsapp px-2 py-1 rounded-full">💸💬</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Your AI accountant in WhatsApp. Track expenses, get insights, and manage your finances effortlessly.
+              Your cute AI accountant in WhatsApp. Track expenses, get insights, and manage your finances effortlessly with your expense buddy.
             </p>
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} ExpenseBot. All rights reserved.
+              © {new Date().getFullYear()} TilluBot. All rights reserved.
             </p>
           </div>
           
